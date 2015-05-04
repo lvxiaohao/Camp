@@ -6,12 +6,12 @@ import org.junit.Test;
 /**
  * Created on 2015-04-30.
  *
- * @author 吕浩
+ * @author 鍚曟旦
  * @since 1.0.0
  */
 public class DruidTest {
     /**
-     * 将文本用druid加密.
+     * 灏嗘枃鏈敤druid鍔犲瘑.
      * @throws Exception
      */
     @Test

@@ -5,16 +5,16 @@ import org.junit.Test;
 import java.util.Map;
 
 /**
- * ²âÊÔ
+ * æµ‹è¯•
  * Created on 2015-04-30.
  *
- * @author ÂÀºÆ
+ * @author å•æµ©
  * @since 1.0.0
  */
 public class RsaTest {
 
     /**
-     * Éú³ÉRSAÃÜÔ¿¶Ô.
+     * ç”ŸæˆRSAå¯†é’¥å¯¹.
      */
     @Test
     public void generatePrivateAndPublicKey() {

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.lxhao.database.hibernate.pojo">
+	<class name="Emp" table="s_emp" >
+		<id name="id">
+		<!-- increment 单线程  -->
+			<generator class="increment"/>
+		</id>
+		<property name="last_name" type="string"/>
+		<property name="salary" type="double"/>
+	</class>
+</hibernate-mapping>
