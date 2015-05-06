@@ -24,7 +24,7 @@ public class ConnectionTest {
             conn = ConnectionFactory.getOracleConnection();
             state = conn.createStatement();
             result = state.executeQuery("select * from jdbc_test");
-            while(result.next()) {
+            while (result.next()) {
                 System.out.print(result.getInt(1) + "\t");
                 System.out.println(result.getString(2));
             }

@@ -52,24 +52,24 @@ public class BatchTest {
             conn = ConnectionFactory.getConnection();
             state = conn.prepareStatement(sql);
             long startTime = System.currentTimeMillis();
-            for(int i = 1;i < 1000000;i++) {
+            for (int i = 1; i < 1000000; i++) {
                 state.setInt(1, i);
                 state.setString(2, "test_" + i);
-                state.addBatch();	//将一组参数添加到命令列表中，在所有参数已经赋值后使用此语句
+                state.addBatch();    //将一组参数添加到命令列表中，在所有参数已经赋值后使用此语句
             }
-            state.executeBatch();	//没有参数
+            state.executeBatch();    //没有参数
             long midTime = System.currentTimeMillis();
             int count = 1;
-            for(int i = 1;i < 1000000;i++) {
+            for (int i = 1; i < 1000000; i++) {
                 state.setInt(1, i);
                 state.setString(2, "test_" + i);
-                state.addBatch();	//将一组参数添加到命令列表中，在所有参数已经赋值后使用此语句
-                count ++;
-                if(count % 100000 == 0) {
+                state.addBatch();    //将一组参数添加到命令列表中，在所有参数已经赋值后使用此语句
+                count++;
+                if (count % 100000 == 0) {
                     state.executeBatch();
                 }
             }
-            state.executeBatch();	//没有参数
+            state.executeBatch();    //没有参数
             long endTime = System.currentTimeMillis();
             System.out.println("第一次运行的时间" + (midTime - startTime));
             System.out.println("第二次运行的时间" + (endTime - midTime));

@@ -16,6 +16,7 @@ import java.sql.ResultSet;
 public class EmpManager {
     /**
      * 保存员工信息
+     *
      * @param e 要保存的员工信息
      */
     public void saveEmp(Emp e) {
@@ -38,8 +39,9 @@ public class EmpManager {
 
     /**
      * 通过ID得到员工信息
-     * @param id    员工的ID
-     * @return      查询到的员工信息
+     *
+     * @param id 员工的ID
+     * @return 查询到的员工信息
      */
     public Emp getEmpById(int id) {
         String sql = "select id,last_name,salary from s_emp where id = ?";
@@ -66,6 +68,7 @@ public class EmpManager {
 
     /**
      * 通过姓名获取员工信息
+     *
      * @param name
      * @return
      */
@@ -75,6 +78,7 @@ public class EmpManager {
 
     /**
      * 删除员工信息
+     *
      * @param e
      */
     public void deleteEmp(Emp e) {
@@ -83,6 +87,7 @@ public class EmpManager {
 
     /**
      * 更新员工信息
+     *
      * @param e
      */
     public void updateEmp(Emp e) {

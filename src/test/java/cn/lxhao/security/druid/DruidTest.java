@@ -12,6 +12,7 @@ import org.junit.Test;
 public class DruidTest {
     /**
      * 将文本用druid加密.
+     *
      * @throws Exception
      */
     @Test
