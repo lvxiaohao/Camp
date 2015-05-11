@@ -26,9 +26,10 @@ public class ParseString {
         text =
                 "#history()" +
                         "#if($history.size() > 0)\n" +
+                        "#set($a = \"111\")"+
                         "<div class=\"am-list\">\n" +
                         "    <div class=\"am-list-header\">\n" +
-                        "        #name(\"1\",\"历史记录\")\n" +
+                        "        #name($a,$a)\n" +
                         "    </div>\n" +
                         "    <div class=\"am-list-body\">\n" +
                         "        #foreach($item in $history)\n" +

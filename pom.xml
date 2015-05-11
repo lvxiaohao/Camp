@@ -25,11 +25,14 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
         </dependency>
+
+        <!-- Druid 加密-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.0.9</version>
         </dependency>
+
         <!-- Hibernate 基本组件 -->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -49,6 +52,18 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>1.7</version>
+        </dependency>
+
+        <!-- Http Client -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.2.1</version>
         </dependency>
     </dependencies>
 </project>
